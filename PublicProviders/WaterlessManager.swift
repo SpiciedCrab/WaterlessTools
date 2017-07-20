@@ -90,7 +90,7 @@ extension WaterlessManager : ManagerOpened , WaterlessNavigatable
         
         alertVc.addAction(confirmAction)
         
-        rootController.pushViewController(alertVc, animated: true)
+        rootController.present(alertVc, animated: true, completion: nil)
     }
 
 }
