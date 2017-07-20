@@ -47,7 +47,7 @@ extension CurrentBranchProvider
     {
         currentBranch = fetchCurrentBranchInfo(with : branchName)
         
-        return currentBranch == nil
+        return currentBranch != nil
     }
 }
 
