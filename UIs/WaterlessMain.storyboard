@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Waterless Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="WaterlessHomeViewController" id="BYZ-38-t0r" customClass="WaterlessHomeViewController" customModule="Waterless" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mgt-8p-hMR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUG-ah-6fd">
+                                        <rect key="frame" x="20" y="32" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="2WR-ld-UKJ"/>
+                                            <constraint firstAttribute="height" constant="44" id="6xF-Uw-u43"/>
+                                        </constraints>
+                                        <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7oJ-lh-9Sj"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小厨房" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBL-Xb-Xup">
+                                        <rect key="frame" x="20" y="91" width="106" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                        <color key="textColor" red="0.22745098039215686" green="0.19607843137254902" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="欢迎提出更多有意思的意见，有想法的就发私聊饭团吧·" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="99" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n71-gj-hij">
+                                        <rect key="frame" x="20" y="133" width="340" height="79"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.22745098039215686" green="0.19607843137254902" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="dBL-Xb-Xup" firstAttribute="top" secondItem="UUG-ah-6fd" secondAttribute="bottom" constant="15" id="6fm-zA-vTF"/>
+                                    <constraint firstAttribute="trailing" secondItem="n71-gj-hij" secondAttribute="trailing" constant="15" id="9C0-8B-WsB"/>
+                                    <constraint firstItem="dBL-Xb-Xup" firstAttribute="leading" secondItem="UUG-ah-6fd" secondAttribute="leading" id="ESx-Ck-AFy"/>
+                                    <constraint firstItem="n71-gj-hij" firstAttribute="leading" secondItem="dBL-Xb-Xup" secondAttribute="leading" id="Wg0-gl-vTW"/>
+                                    <constraint firstAttribute="bottom" secondItem="n71-gj-hij" secondAttribute="bottom" constant="8" id="YqR-1Z-Mlq"/>
+                                    <constraint firstItem="UUG-ah-6fd" firstAttribute="leading" secondItem="Mgt-8p-hMR" secondAttribute="leading" constant="20" id="aVF-ID-dju"/>
+                                    <constraint firstItem="n71-gj-hij" firstAttribute="top" secondItem="dBL-Xb-Xup" secondAttribute="bottom" id="fYl-QF-y4w"/>
+                                    <constraint firstAttribute="height" constant="220" id="tuw-BU-k8q"/>
+                                    <constraint firstItem="UUG-ah-6fd" firstAttribute="top" secondItem="Mgt-8p-hMR" secondAttribute="top" constant="32" id="yYl-er-fXq"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YDz-Zc-4yf">
+                                <rect key="frame" x="5" y="220" width="365" height="442"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="bXl-0b-wXv">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Sjn-Pv-B2q"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="rjd-9l-AF0"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.98039215690000003" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YDz-Zc-4yf" firstAttribute="top" secondItem="Mgt-8p-hMR" secondAttribute="bottom" id="2bh-2J-7Qi"/>
+                            <constraint firstAttribute="trailing" secondItem="YDz-Zc-4yf" secondAttribute="trailing" constant="5" id="9U8-9W-64b"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YDz-Zc-4yf" secondAttribute="bottom" constant="5" id="ec1-Cy-yEC"/>
+                            <constraint firstItem="YDz-Zc-4yf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="fJ5-pj-Pqf"/>
+                            <constraint firstItem="Mgt-8p-hMR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gMV-s3-fUc"/>
+                            <constraint firstAttribute="trailing" secondItem="Mgt-8p-hMR" secondAttribute="trailing" id="oiQ-Lc-6Vc"/>
+                            <constraint firstItem="Mgt-8p-hMR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yCp-It-gAK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="YDz-Zc-4yf" id="Z3c-Vt-eZN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="32" height="32"/>
+    </resources>
+</document>
