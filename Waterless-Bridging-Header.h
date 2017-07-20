@@ -3,5 +3,5 @@
 //
 
 
-#import "STSimplePing.h"
+
 #import "NSObject+Extension.h"
